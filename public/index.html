@@ -7,9 +7,110 @@
     <!--CSS Reset -->
 	<link rel="cssstylereset" href="/css/normalize.css">
 </head>
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+
+#title {
+	height: 50px;
+	margin: auto;
+	margin-top: 50px;
+	color: white;
+	font-size: 30px;
+	width: 800px;
+	border-bottom: 2px solid white;
+}
+
+.blank {
+	height: 30px;
+}
+
+#gameboard {
+	height: 400px;
+	width: 800px;
+	border: 2px solid white;
+	padding: 10px;
+	margin: auto;
+	position: relative;
+	background-color: #d3d3d3
+}
+
+#gameTitle {
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	margin-top: 100px;
+}
+
+#wordHolder {
+ margin-top: 50px;
+ margin-left: 150px;
+ border: 1px solid black;
+}
+
+.tile {
+ height: 40px;
+ width: 40px;
+ float: left;
+ margin-right: 10px;
+ background-color: white;
+ border: 5px solid gray;
+ text-align: center;
+ font-size: 24px;
+ color: blue;
+ padding-top: 5px;
+}
+
+#guesses {
+ margin-top: 20px;
+ margin-left: 150px;
+}
+ 
+#pixHolder {
+ margin-left: 30px;
+ width: 75px;
+ float: left;
+ overflow: hidden;
+}
+ 
+#pixHolder img {
+ position: relative;
+}
+
+#start {
+	background-color: blue;
+	color: white;
+	width: 80px;
+	height: 45px;
+	border-radius: 5px;
+	font-weight: bolder;
+}
+
+#end {
+	height: 40px;
+	width: 80px;
+	background-color: yellow;
+	color: black;
+	font-weight: bolder;
+	border-radius: 5px;
+}
+</style>
 <body>
-<script src='/js/jquery.js'></script>
-<script src='/js/hangman.js'></script>
+	<div id="container">
+		<div id="title">Let's Play Hangman!</div>
+		<button class="action" id="start">Start Game!</button>
+		<div class="blank"></div>
+		<div class="content" id="gameboard"></div>
+		
+		<button class="action" id="end">I Give Up!</button>
+
+	</div>	
+<script src="/js/jquery.js"></script>
+<script src="/js/hangman.js"></script>
 
 </body>
 </html>
